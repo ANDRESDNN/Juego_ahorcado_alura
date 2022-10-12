@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego Ahorcado Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <!-- CABECERA DE LA PAGINA-->
+        <header>
+            <div class="logo">
+                <h1><img src="recursos/Logo.png" alt="Logo de alura" class="logoAlura"></h1>
+            </div>
+    
+
+        </header>
+
+        <!--CUERPO DE LA PAGINA-->
+        <main>
+
+
+            <ul  class="primera_vista" id="id_primera_vista" >
+                <li>
+                    <button id="id_iniciar_juego" class="iniciar_juego"  onclick="btnIniciarJuego()" style="display:block" >iniciar juego</button>
+                </li>
+                <li>
+                    <button id="id_agregar_palabra"  class="agregar_palabra"  onclick="btnAgregarPalabra()" style="display:block" >agregar nueva palabra</button>
+                </li>
+            </ul>
+
+
+
+
+            <div class="vista_juego" id="id_segunda_vista">
+
+
+                <ul class="segunda_vista_css">
+                    <li class="imagen_mas_texto_salida">
+                        <h1><img src="recursos/escena0.gif.crdownload" alt="imagen ahorcado" class="imagenjuego" id="imagen_ahorcado" ></h1>
+                    </li>
+
+                    <li>
+                        <textarea name="mensaje_salida" class="mensajeSalida"  id="mensaje_final" cols="30" rows="2"   ></textarea>
+                    </li>
+                </ul>
+
+                <ul class="arealetras">
+                    <li>
+                        <textarea name="mensaje_salidas" class="mensajensalida" id="palabra_final" ></textarea>
+                    </li>
+
+                    <li>
+                        <textarea name="letras_probadas" class="letrasprobadas" id="letras_prob"  ></textarea>
+                    </li>
+                </ul>
+                
+                <ul class="areaEntradaLetra">
+                    <li>
+                        <input type="text" id="entradaLetras" class="entrada_letra"  placeholder="INGRESE UNA LETRA" required >
+                    </li>
+
+                    <li>
+                        <button id="id_probar"  class="btnprobar"  onclick="btnprobarLETRA()" style="display:block" >probar</button>
+                    </li>                    
+                </ul>
+                
+                <ul class="botonesNuevoYDesistir">
+                    <li>
+                        <button id="id_nuevo_juego"  class="nuevo_juego"  onclick="btnNuevoJuego()" style="display:block" >nuevo juego</button>
+                    </li>
+                    <li>
+                        <button id="id_desistir_juego"  class="btn_desistir"  onclick="btndesistir()" style="display:block" > desistir </button>
+
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="agregar_palabas" id="id_agregar_palabas">
+            
+                <textarea name="agregar_palabras_zona"  class="palabraAgregada"   cols="30" rows="10" placeholder="Ingrese una palabra"></textarea>
+                <p> &#9888; Max 8 letras </p>
+
+                <ul class="botones_agregaryempezar_cancelar">
+                    <li>
+                        <button id="id_btn_agregaryempezar"  class="btnagregar"  onclick="btnagregarPalabra()" style="display:block" >agregar y empezar</button>
+                    </li>
+                    <li>
+                        <button id="id_btn_Cancelar"  class="btnCancelar"  onclick="btnCancelar()" style="display:block" >cancelar</button>
+                    </li>
+                </ul>
+                    
+            </div>
+
+        </main>
+        
+        <!--PIE DE PAGINA-->
+        <footer class="rodapie">
+            <a title="GitHub" href="https://github.com/ANDRESDNN"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icono link github" width="30" height="30"/></a>
+            
+            <p class="copyread"> &copy Andrés Narváez 2022 </p>
+
+        <script src="script.js"></script>
+
+
+
+    </body>
+</html>
+
+<!-- eventos por hacer 
+-aun revisar el responsive-->
